@@ -808,127 +808,53 @@ footer {
 
 /* ── MOBILE RESPONSIVE ── */
 @media (max-width: 768px) {
-
-  /* NAV */
-  nav {
-    padding: 0 20px;
-    height: 52px;
-  }
+  nav { padding: 0 20px; height: 52px; }
   .nav-links { display: none; }
   .nav-cta { font-size:.62rem; padding: 6px 12px; }
-
-  /* HERO */
   .hero { padding: 90px 24px 60px; }
   .hero-logo-wrap img { height: 70px; }
   .hero-tagline { font-size: 1rem; }
   .hero-sub { font-size: .6rem; letter-spacing:.15em; }
   .hero-btns { flex-direction: column; align-items: center; gap: 10px; }
   .btn-fill, .btn-line { width: 200px; text-align: center; padding: 12px 20px; }
-
-  /* WORK TABS */
   .work-nav { overflow-x: auto; white-space: nowrap; }
   .work-tab { padding: 12px 16px; font-size:.62rem; }
-
-  /* FILMS GRID */
-  .f-grid {
-    grid-template-columns: 1fr !important;
-    padding: 0 20px;
-  }
+  .f-grid { grid-template-columns: 1fr !important; padding: 0 20px; }
   .card, .card-a, .card-b, .card-c, .card-d,
-  .card-e, .card-f, .card-g {
-    grid-column: span 1 !important;
-    min-height: 260px !important;
-  }
-
-  /* MUSIC VIDEOS */
-  .mv-grid {
-    grid-template-columns: 1fr !important;
-    padding: 0 20px;
-  }
-
-  /* SECTIONS */
+  .card-e, .card-f, .card-g { grid-column: span 1 !important; min-height: 260px !important; }
+  .mv-grid { grid-template-columns: 1fr !important; padding: 0 20px; }
   .section-wrap { padding: 60px 20px; }
   .sec-title { font-size: 2rem; }
   .sec-sub { font-size: .84rem; }
-
-  /* ABOUT */
-  .about-inner {
-    grid-template-columns: 1fr !important;
-    gap: 40px;
-    padding: 0 20px;
-  }
+  .about-inner { grid-template-columns: 1fr !important; gap: 40px; padding: 0 20px; }
   .about-wrap { padding: 60px 20px; }
-
-  /* FOUNDER CARD */
   .founder-card { padding: 28px 20px; }
-
-  /* SERVICES */
-  .services-row, .svc-grid {
-    grid-template-columns: 1fr 1fr !important;
-    padding: 0 20px;
-  }
-
-  /* TIMELINE */
+  .services-row, .svc-grid { grid-template-columns: 1fr 1fr !important; padding: 0 20px; }
   .tl-wrap { padding: 0 20px; }
   .tl-row { grid-template-columns: 50px 1fr; gap: 16px; }
   .tl-yr { font-size: 1rem; }
-
-  /* INITIATIVES */
-  .initiative-hero {
-    grid-template-columns: 1fr !important;
-    gap: 40px;
-  }
+  .initiative-hero { grid-template-columns: 1fr !important; gap: 40px; }
   .initiative-section { padding: 60px 20px; }
-  .phases-grid {
-    grid-template-columns: 1fr !important;
-  }
-  .instructors-grid {
-    grid-template-columns: 1fr !important;
-  }
-  .initiative-stats {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-
-  /* SUPPORT */
+  .phases-grid { grid-template-columns: 1fr !important; }
+  .instructors-grid { grid-template-columns: 1fr !important; }
+  .initiative-stats { grid-template-columns: repeat(2, 1fr) !important; }
   .store-section { padding: 60px 20px; }
   .store-grid { grid-template-columns: 1fr !important; }
-  div[style*="grid-template-columns:1fr 1fr"] {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* CONTACT */
   .contact-section { padding: 60px 20px; }
-  .contact-inner {
-    grid-template-columns: 1fr !important;
-    gap: 40px;
-  }
-
-  /* CLIENTS */
+  .contact-inner { grid-template-columns: 1fr !important; gap: 40px; }
   .clients-section { padding: 40px 20px; }
-
-  /* FOOTER */
-  footer {
-    padding: 24px 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
+  footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; gap: 12px; }
   .ft-links { flex-wrap: wrap; gap: 14px; }
-
-  /* FILMS HEADER */
   .films-hd { padding: 0 20px; }
   .sec-head { flex-direction: column; gap: 10px; }
+  .story-section { padding: 60px 20px; }
+  .tl-section { padding: 60px 20px; }
 }
-
 @media (max-width: 480px) {
-  .services-row, .svc-grid {
-    grid-template-columns: 1fr !important;
-  }
+  .services-row, .svc-grid { grid-template-columns: 1fr !important; }
   .hero-logo-wrap img { height: 55px; }
   .sec-title { font-size: 1.7rem; }
-  .initiative-stats {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
+  .cf-row { grid-template-columns: 1fr !important; }
 }
 
 </style>
@@ -1447,7 +1373,7 @@ footer {
       <div style="padding:40px;background:rgba(240,234,216,0.6);border:1px solid var(--line2);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px;">
         <div class="sec-lbl">Bank Transfer</div>
         <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--coffee2);line-height:1.6;">To support via bank transfer, please get in touch directly and we will share the details.</p>
-        <a href="mailto:tenzi.tsewang@gmail.com" style="font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--coffee2);text-decoration:none;border-bottom:1px solid var(--coffee4);padding-bottom:2px;">tenzi.tsewang@gmail.com</a>
+        <a href="mailto:tenzintalkies@gmail.com" style="font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--coffee2);text-decoration:none;border-bottom:1px solid var(--coffee4);padding-bottom:2px;">tenzintalkies@gmail.com</a>
       </div>
 
     </div>
@@ -1496,7 +1422,7 @@ footer {
       <div class="sec-lbl">04 — Contact</div>
       <h2 class="sec-title">Let's create <em>something.</em></h2>
       <div class="cd-list">
-        <div class="cd"><div class="cd-l">Email</div><div class="cd-v">tenzi.tsewang@gmail.com</div></div>
+        <div class="cd"><div class="cd-l">Email</div><div class="cd-v">tenzintalkies@gmail.com</div></div>
         <div class="cd"><div class="cd-l">Phone</div><div class="cd-v">+91 99901 94695</div></div>
         <div class="cd"><div class="cd-l">Location</div><div class="cd-v">Dharamshala, Himachal Pradesh &amp; Gangtok, Sikkim</div></div>
         <div class="cd"><div class="cd-l">MSME Registration</div><div class="cd-v">UDYAM-SK-01-0010057</div></div>
