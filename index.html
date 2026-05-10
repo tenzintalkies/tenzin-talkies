@@ -38,7 +38,7 @@ body {
   opacity: 0.92;
 }
 .logo-img {
-  filter:brightness(0) saturate(100%) invert(13%) sepia(45%) saturate(800%) hue-rotate(10deg) brightness(60%);
+  filter:none;
 }
 
 /* ── NAV ── */
@@ -805,6 +805,132 @@ footer {
 @keyframes tick { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 .reveal { opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
 .reveal.vis { opacity:1; transform:translateY(0); }
+
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+
+  /* NAV */
+  nav {
+    padding: 0 20px;
+    height: 52px;
+  }
+  .nav-links { display: none; }
+  .nav-cta { font-size:.62rem; padding: 6px 12px; }
+
+  /* HERO */
+  .hero { padding: 90px 24px 60px; }
+  .hero-logo-wrap img { height: 70px; }
+  .hero-tagline { font-size: 1rem; }
+  .hero-sub { font-size: .6rem; letter-spacing:.15em; }
+  .hero-btns { flex-direction: column; align-items: center; gap: 10px; }
+  .btn-fill, .btn-line { width: 200px; text-align: center; padding: 12px 20px; }
+
+  /* WORK TABS */
+  .work-nav { overflow-x: auto; white-space: nowrap; }
+  .work-tab { padding: 12px 16px; font-size:.62rem; }
+
+  /* FILMS GRID */
+  .f-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 20px;
+  }
+  .card, .card-a, .card-b, .card-c, .card-d,
+  .card-e, .card-f, .card-g {
+    grid-column: span 1 !important;
+    min-height: 260px !important;
+  }
+
+  /* MUSIC VIDEOS */
+  .mv-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 20px;
+  }
+
+  /* SECTIONS */
+  .section-wrap { padding: 60px 20px; }
+  .sec-title { font-size: 2rem; }
+  .sec-sub { font-size: .84rem; }
+
+  /* ABOUT */
+  .about-inner {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .about-wrap { padding: 60px 20px; }
+
+  /* FOUNDER CARD */
+  .founder-card { padding: 28px 20px; }
+
+  /* SERVICES */
+  .services-row, .svc-grid {
+    grid-template-columns: 1fr 1fr !important;
+    padding: 0 20px;
+  }
+
+  /* TIMELINE */
+  .tl-wrap { padding: 0 20px; }
+  .tl-row { grid-template-columns: 50px 1fr; gap: 16px; }
+  .tl-yr { font-size: 1rem; }
+
+  /* INITIATIVES */
+  .initiative-hero {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+  .initiative-section { padding: 60px 20px; }
+  .phases-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .instructors-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .initiative-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* SUPPORT */
+  .store-section { padding: 60px 20px; }
+  .store-grid { grid-template-columns: 1fr !important; }
+  div[style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* CONTACT */
+  .contact-section { padding: 60px 20px; }
+  .contact-inner {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+
+  /* CLIENTS */
+  .clients-section { padding: 40px 20px; }
+
+  /* FOOTER */
+  footer {
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .ft-links { flex-wrap: wrap; gap: 14px; }
+
+  /* FILMS HEADER */
+  .films-hd { padding: 0 20px; }
+  .sec-head { flex-direction: column; gap: 10px; }
+}
+
+@media (max-width: 480px) {
+  .services-row, .svc-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-logo-wrap img { height: 55px; }
+  .sec-title { font-size: 1.7rem; }
+  .initiative-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 </style>
 </head>
 <body>
